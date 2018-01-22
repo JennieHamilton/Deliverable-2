@@ -40,6 +40,9 @@ var output = "Hello. My name is Cecil.";
 while (answer === "yes") {
   var answer = prompt("Would you like to print this again?");
   output = output + "!";
+  if (answer === "no") {
+    break;
+  }
   console.log(output);
 }
 
